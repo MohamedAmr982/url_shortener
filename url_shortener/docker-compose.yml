@@ -3,9 +3,7 @@ services:
     image: postgres
     environment:
       - POSTGRES_PASSWORD_FILE=/run/secrets/db_password
-      - POSTGRES_ROOT_PASSWORD_FILE=/run/secrets/db_root_password
     secrets:
-      - db_root_password
       - db_password
     volumes:
       - db_data:/var/lib/postgresql/data
@@ -22,8 +20,6 @@ services:
 secrets:
   db_password:
     file: db_password
-  db_root_password:
-    file: db_root_password
 
 volumes:
   db_data:

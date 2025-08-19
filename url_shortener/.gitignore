@@ -22,3 +22,9 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+db_password
+db_root_password
+
+**/caddy
+frankenphp
+frankenphp-worker.php
